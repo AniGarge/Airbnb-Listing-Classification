@@ -1,3 +1,5 @@
 # Airbnb-Listing-Classification
 
-#### Designed a web application using Shiny to classify the listings of Airbnb(NYC) based on the location(latitude and longitude), neighbourhood, facilities available and other input features. Training, testing and evaluation are done in R while the web application is deployed on the Shiny Server.
+#### Technologies Used - R(Caret, dplyr, ggplot, e1071), Shiny 
+
+#### The project uses Airbnb listing data to learn what sort of housing options are available in what part of New York City and what are the different kinds of amenities they have. There are multiple features in the dataset like number of reviews, the price, etc. After balancing the dataset and deducing that 98% of the data lies between $0 and $2000 I seggregated the listings into different classes according to the price. Then classification models like decision trees, Naive Bayes and SVM were built on the data I had. Finally, I developed a Shiny app where if you input all the features the best model runs in the background and predicts the class of the listing you are looking for. This can be used by Airbnb users anytime to check what category does the price of the listing fall in if they are looking to stay in NYC.
